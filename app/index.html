@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title>Get News</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<div ng-controller="ctrl">
+    <button ng-click="getNewsSyn(true)">
+        fast follow slow
+    </button>
+    <button ng-click="getNewsAsyn(true)">
+        go together
+    </button>
+    <button ng-click="cleanResult()">
+        clean result
+    </button>
+
+    <div>
+            <span>
+              fast Boy: {{fastBoy}}
+            </span>
+    </div>
+    <div>
+            <span>
+               slow Boy: {{slowBoy}}
+            </span>
+    </div>
+</div>
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
